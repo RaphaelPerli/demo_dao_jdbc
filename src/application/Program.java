@@ -54,12 +54,17 @@ public class Program {
 
 		DepartmentDao departmenteDao = DaoFactory.createDepartmentDao();
 		
-		System.out.println("---- TESTE 1 FINDY BY ID ----");
+		System.out.println("---- TESTE 1 FIND BY ID ----");
 		
 		Department department =  departmenteDao.findById(2);
 		System.out.println(department);
 		
+		System.out.println("\n --- TESTE 2 FIND ALL ----");
 		
+		List<Department> list = departmenteDao.findAll();
+		for (Department dep : list) {
+			System.out.println(dep);
+		}
 		
 		
 		
