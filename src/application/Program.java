@@ -66,9 +66,14 @@ public class Program {
 			System.out.println(dep);
 		}
 		
+		System.out.println("\n --- TESTE 3 INSERT NEW DEPARTMENT ----");
 		
+		Department dep =  new Department(null, "Marketing");
+		departmenteDao.insert(dep);
 		
-	
+		System.out.println("\n --- TESTE 4 UPDATE DEPARTMENT ----");
+		dep = new Department(6, "Financeiro");
+		departmenteDao.update(dep);
 	
 	}
 
